@@ -35,8 +35,18 @@ server.post("/usuarios", (req, res) => {
   const usuarios = db.get("usuarios").value();
   const newUser = req.body; 
 
+  // Log para verificar los datos del nuevo usuario
+  console.log('Nuevo usuario recibido:', newUser);
+
+  // Verificar que la URL del avatar esté presente
+  if (!newUser.avatar) {
+    return res.status(400).json({ error: "El avatar es obligatorio." });
+  }
+
   usuarios.push(newUser);
   db.set("usuarios", usuarios).write(); 
+
+  console.log('Nuevo usuario guardado:', newUser);
 
   res.status(201).json(newUser); 
 });
