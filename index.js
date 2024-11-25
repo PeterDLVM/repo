@@ -29,6 +29,18 @@ server.post("/login", (req, res) => {
   }
 });
 
+// Función para manejar la creación de un nuevo usuario
+server.post("/usuarios", (req, res) => {
+  const db = router.db;
+  const usuarios = db.get("usuarios").value();
+  const newUser = req.body; 
+
+  usuarios.push(newUser);
+  db.set("usuarios", usuarios).write(); 
+
+  res.status(201).json(newUser); 
+});
+
 server.use(router);
 
 server.listen(port, () => {
