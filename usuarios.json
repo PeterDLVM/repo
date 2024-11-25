@@ -51,25 +51,41 @@
             "sede": "Sede Central",
             "avatar": "",
             "rol": "gestor"
-        }
+        },
+        {
+              "id": "asistenteP1",
+              "nombre": "Juan Soto",
+              "rut": "888888888-9",
+              "correo": "juan.perez@example.com",
+              "rol": "asistente"
+            },
+            {
+              "id": "asistenteP2",
+              "nombre": "María Venegas",
+              "rut": "121211212-1",
+              "correo": "maria.lopez@example.com",
+              "rol": "asistente"
+            }
     ],
     "eventos": [
         {
-          "id": "1",
-          "nombre": "Concurso de robotica",
-          "fecha": "08-11-2024",
-          "descripcion": "Únete a nosotros para el segundo concurso de robótica. Compite con tu robot en diferentes desafíos y demuestra tus habilidades en robótica. ¡Habrá premios y mucho aprendizaje!",
-          "lugar": "Auditorio Principal - Sede Maipu",
-          "imagen": ""
-        },
+              "id": "1",
+              "nombre": "Concurso de robotica",
+              "fecha": "08-11-2024",
+              "descripcion": "Únete a nosotros para el segundo concurso de robótica. Compite con tu robot en diferentes desafíos y demuestra tus habilidades en robótica. ¡Habrá premios y mucho aprendizaje!",
+              "lugar": "Auditorio Principal - Sede Maipu",
+              "imagen": "",
+              "participantes": ["asistenteP1", "asistenteP2"]
+            },
         {
-          "id": "2",
-          "nombre": "Taller musical",
-          "fecha": "01-12-2024",
-          "descripcion": "Participa en nuestro taller musical donde aprenderás sobre técnicas de canto e interpretación. Ideal para todos los niveles, desde principiantes hasta avanzados. ¡No te lo pierdas!",
-          "lugar": "Sala 343 - Sede Maipu",
-          "imagen": ""
-        }
+              "id": "2",
+              "nombre": "Taller musical",
+              "fecha": "01-12-2024",
+              "descripcion": "Participa en nuestro taller musical donde aprenderás sobre técnicas de canto e interpretación. Ideal para todos los niveles, desde principiantes hasta avanzados. ¡No te lo pierdas!",
+              "lugar": "Sala 343 - Sede Maipu",
+              "imagen": "",
+              "participantes": ["asistenteP1"]
+            }
       ],
     "asistencias": [
         {
